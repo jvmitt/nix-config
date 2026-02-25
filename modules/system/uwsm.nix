@@ -7,7 +7,7 @@
         prettyName = "Sway";
         comment = "Sway compositor managed by UWSM";
         binPath = "/run/current-system/sw/bin/sway";
-        extraArgs = [ "unsupported-gpu" ];
+        extraArgs = [ "--unsupported-gpu" ];
       };
     };
   };

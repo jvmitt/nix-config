@@ -84,6 +84,7 @@
         sops = import ./modules/system/sops.nix;
 
         # System
+        uwsm = import ./modules/system/uwsm.nix;
         grub = import ./modules/system/bootloaders/grub.nix;
         sddm = import ./modules/system/display-managers/sddm.nix;
         greetd = import ./modules/system/display-managers/greetd.nix;
@@ -92,6 +93,7 @@
         bluetooth = import ./modules/system/bluetooth.nix;
         garbage-collector = import ./modules/system/garbage-collector.nix;
         io-utils = import ./modules/system/io-utils.nix;
+        optimization = import ./modules/system/optimization.nix;
         pipewire = import ./modules/system/pipewire.nix;
         power = import ./modules/system/power.nix;
         network = import ./modules/system/network/network.nix;
@@ -115,10 +117,10 @@
             home-manager.nixosModules.home-manager
             sops-nix.nixosModules.sops
             home
-            greetd
+            sddm
+            uwsm
             sway
             network
-            localhost
             grub
             timezone
             xdg
@@ -129,14 +131,15 @@
             bluetooth
             garbage-collector
             io-utils
+            optimization
             pipewire
             power
+            steam
             programs
             firefox
             fonts
             virtualisation
             tailscale
-            zerotier
             syncthing
             user-jvs
             sops

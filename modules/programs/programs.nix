@@ -54,7 +54,8 @@
 
     # Jogos
     #lutris
-    #prismlauncher
+    protonup-ng
+    prismlauncher
     #r2modman
     #lumafly
     #ckan
