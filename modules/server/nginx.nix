@@ -30,7 +30,7 @@ in
     "d /data 0755 root root - -"
     "d /data/www 0755 root root - -"
     "d /data/www/home 0755 root root - -"
-    "f /data/www/home/index.html 0755 root root - - \"<h1>Default</h1>\""
+    "f /data/www/home/${webIndex} 0755 root root - - \"<h1>Default</h1>\""
   ];
 
 }
