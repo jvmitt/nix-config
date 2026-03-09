@@ -76,6 +76,7 @@
         openssh = import ./modules/server/openssh.nix;
         samba = import ./modules/server/samba.nix;
         minecraft-server = import ./modules/server/minecraft-server.nix;
+        motion = import ./modules/server/motion.nix;
         screen-off = import ./modules/server/screen-off.nix;
         tailscale-server = import ./modules/server/tailscale-server.nix;
         syncthing = import ./modules/server/syncthing.nix;
@@ -164,6 +165,7 @@
             io-utils
             tailscale-server
             minecraft-server
+            motion
             zerotier
             screen-off
             syncthing
