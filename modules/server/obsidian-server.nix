@@ -26,14 +26,12 @@ in
              generate_task_file(${tasks_file})
           fi
 
-          if [ -f "${tomorrow_tasks_file}" ]; then
+          if [ -f ${tomorrow_tasks_file} ]; then
              mv ${tomorrow_tasks_file} ${tasks_file}
              generate_tasks_file(${tomorrow_tasks_file})
           fi
 
-          generate_task_file() {
-
-          local file = $1
+          generate_task_file($1) {
 
           cat > "$1" << 'EOF'
           Tarefas Primárias
