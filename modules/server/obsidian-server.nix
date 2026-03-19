@@ -56,7 +56,7 @@ in
     timers.obsidian-updater = {
       wantedBy = [ "timers.target" ];
       timerConfig = {
-        OnCalendar = "*-*-* 12:05:00";
+        OnCalendar = "*-*-* 12:15:00";
         Persistant = true;
       };
     };
