@@ -12,7 +12,7 @@ in
       description = "Automation enhancer on my personal Obsidian setup.";
       after = [ ];
       serviceConfig = {
-        type = "oneshot";
+        Type = "oneshot";
         ExecStart = pkgs.writeShellScript "obsidian-updater" ''
           #!/bin/bash
 
@@ -56,7 +56,7 @@ in
     timers.obsidian-updater = {
       wantedBy = [ "timers.target" ];
       timerConfig = {
-        OnCalendar = "*-*-* 12:15:00";
+        OnCalendar = "*-*-* 12:18:00";
         Persistant = true;
       };
     };
