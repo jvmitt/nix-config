@@ -79,6 +79,7 @@
         motion = import ./modules/server/motion.nix;
         screen-off = import ./modules/server/screen-off.nix;
         tailscale-server = import ./modules/server/tailscale-server.nix;
+        obsidian-server = import ./modules/server/obsidian-server.nix;
         syncthing = import ./modules/server/syncthing.nix;
 
         # Secrets/Cryptography
@@ -170,6 +171,7 @@
             minecraft-server
             #motion
             zerotier
+            obsidian-server
             screen-off
             syncthing
             user-jvs
