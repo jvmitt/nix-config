@@ -23,15 +23,15 @@ in
           if [ -f ${tasks_file} ]; then
              mv ${tasks_file} ./.history/tasks/tasks_"$yesterday_date".md
           else
-             generate_task_file(${tasks_file})
+             generate_task_file ${tasks_file}
           fi
 
           if [ -f ${tomorrow_tasks_file} ]; then
              mv ${tomorrow_tasks_file} ${tasks_file}
-             generate_tasks_file(${tomorrow_tasks_file})
+             generate_tasks_file ${tomorrow_tasks_file}
           fi
 
-          generate_task_file($1) {
+          generate_task_file() {
 
           cat > "$1" << 'EOF'
           Tarefas Primárias
@@ -56,7 +56,7 @@ in
     timers.obsidian-updater = {
       wantedBy = [ "timers.target" ];
       timerConfig = {
-        OnCalendar = "*-*-* 12:00:00";
+        OnCalendar = "*-*-* 12:05:00";
         Persistant = true;
       };
     };
