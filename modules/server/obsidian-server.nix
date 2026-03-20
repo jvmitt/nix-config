@@ -5,6 +5,20 @@ let
   tasks_file = "Tarefas.md";
   tomorrow_tasks_file = "Tarefas de Amanhã.md";
 
+  tasks_file_content = ''
+    Tarefas Primárias
+    - [ ]
+    - [ ]
+    - [ ]
+
+    Tarefas Secundárias
+    - [ ]
+    - [ ]
+    - [ ]
+    - [ ]
+    - [ ]
+  '';
+
 in
 {
   systemd = {
@@ -19,21 +33,11 @@ in
           dir="${dir}"
           tasks_file="${tasks_file}"
           tomorrow_tasks_file="${tomorrow_tasks_file}"
+          tasks_file_content="${tasks_file_content}";
 
           generate_tasks_file() {
           cat > "$1" << 'EOF'
-          Tarefas Primárias
-          - [ ]
-          - [ ]
-          - [ ]
-
-          Tarefas Secundárias
-          - [ ]
-          - [ ]
-          - [ ]
-          - [ ]
-          - [ ]
-          EOF
+          "$tasks_file_content"
           }
 
           cd "$dir"
