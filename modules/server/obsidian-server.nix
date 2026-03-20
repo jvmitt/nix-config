@@ -37,7 +37,7 @@ in
 
           generate_tasks_file() {
           cat > "$1" << 'EOF'
-          "$tasks_file_content"
+          $tasks_file_content
           EOF
           }
 
