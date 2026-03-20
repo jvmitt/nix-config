@@ -21,7 +21,7 @@ in
           tomorrow_tasks_file="${tomorrow_tasks_file}"
 
           generate_tasks_file() {
-          cat > $1 << 'EOF'
+          cat > "$1" << 'EOF'
           Tarefas Primárias
           - [ ]
           - [ ]
