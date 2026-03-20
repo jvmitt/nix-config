@@ -169,6 +169,7 @@
             io-utils
             tailscale-server
             minecraft-server
+            timezone
             #motion
             zerotier
             obsidian-server
