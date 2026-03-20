@@ -32,19 +32,19 @@ in
           EOF
           }
 
-          cd ${dir}
+          cd "''${dir}"
 
-          date_yesterday = date -d "-1 day" +%Y-%m-$d
+          date_yesterday = $(date -d "-1 day" +%Y-%m-%d)
 
-          if [ -f ${tasks_file} ]; then
-             mv ${tasks_file} ./.history/tasks/tasks_"$(date_yesterday)".md
+          if [ -f ''${tasks_file} ]; then
+             mv "''${tasks_file}" ./.history/tasks/tasks_$"date_yesterday".md
           else
-             generate_tasks_file ${tasks_file}
+             generate_tasks_file "''${tasks_file}"
           fi
 
-          if [ -f ${tomorrow_tasks_file} ]; then
-             mv ${tomorrow_tasks_file} ${tasks_file}
-             generate_tasks_file ${tomorrow_tasks_file}
+          if [ -f "''${tomorrow_tasks_file}" ]; then
+             mv "''${tomorrow_tasks_file}" "''${tasks_file}"
+             generate_tasks_file "''${tomorrow_tasks_file}"
           fi
 
         '';
