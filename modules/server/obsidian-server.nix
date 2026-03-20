@@ -45,6 +45,8 @@ in
 
           date_yesterday=$(date -d "-1 day" +%Y-%m-%d)
 
+          systemctl stop syncthing
+
           if [ -f "$tasks_file" ]; then
              mv "$tasks_file" ./.history/tasks/tasks_"$date_yesterday".md
           fi
@@ -60,6 +62,8 @@ in
           if [ ! -f "$tomorrow_tasks_file" ]; then
              generate_tasks_file "$tomorrow_tasks_file"
           fi
+
+          systemctl start syncthing
 
         '';
         User = "root";
