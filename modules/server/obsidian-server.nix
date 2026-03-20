@@ -38,7 +38,7 @@ in
 
           cd "$dir"
 
-          date_yesterday = $(date -d "-1 day" +%Y-%m-%d)
+          date_yesterday=$(date -d "-1 day" +%Y-%m-%d)
 
           if [ -f "$tasks_file" ]; then
              mv "$tasks_file" ./.history/tasks/tasks_"$date_yesterday".md
