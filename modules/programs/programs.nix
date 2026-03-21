@@ -88,6 +88,7 @@
     cargo
     gcc
     scrcpy
+    python3
     #android-tools
     #android-studio
     #jetbrains.idea-community-bin
