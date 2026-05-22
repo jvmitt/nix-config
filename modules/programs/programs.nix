@@ -55,6 +55,7 @@
 
     # Jogos
     #lutris
+    hydralauncher
     protonup-ng
     prismlauncher
     r2modman

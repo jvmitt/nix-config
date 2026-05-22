@@ -131,7 +131,7 @@
             qt
             xserver
             security
-            nvidia-nouveau
+            nvidia
             bluetooth
             garbage-collector
             io-utils
@@ -170,7 +170,6 @@
             tailscale-server
             minecraft-server
             timezone
-            #motion
             zerotier
             screen-off
             syncthing

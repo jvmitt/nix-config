@@ -57,15 +57,15 @@
           "${act}+x" = "kill";
           "${act}+f" = "fullscreen";
 
-          "${act}+a" = "focus left";
-          "${act}+s" = "focus down";
-          "${act}+w" = "focus up";
-          "${act}+d" = "focus right";
+          "${act}+h" = "focus left";
+          "${act}+j" = "focus down";
+          "${act}+k" = "focus up";
+          "${act}+l" = "focus right";
 
-          "${act}+Shift+d" = "resize shrink width 10 px or 10 ppt";
-          "${act}+Shift+w" = "resize grow height 10 px or 10 ppt";
-          "${act}+Shift+s" = "resize shrink height 10 px or 10 ppt";
-          "${act}+Shift+a" = "resize grow width 10 px or 10 ppt";
+          "${act}+Shift+h" = "resize shrink width 10 px or 10 ppt";
+          "${act}+Shift+j" = "resize grow height 10 px or 10 ppt";
+          "${act}+Shift+k" = "resize shrink height 10 px or 10 ppt";
+          "${act}+Shift+l" = "resize grow width 10 px or 10 ppt";
 
           "${act}+left" = "move left";
           "${act}+down" = "move down";
