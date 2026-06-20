@@ -10,7 +10,8 @@
 {
 
   imports = [
-    ../modules/home/genvs/sway/sway-config.nix
+    ../modules/home/genvs/i3wm/config.nix
+    ../modules/home/genvs/swaywm/config.nix
     ../modules/home/waybar/waybar.nix
     ../modules/home/wofi/wofi.nix
     ../modules/home/gtk.nix

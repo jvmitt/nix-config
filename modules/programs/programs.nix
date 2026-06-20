@@ -21,9 +21,11 @@
     mpv
     pavucontrol
     winetricks
+    inav-configurator
 
     inputs.zen-browser.packages."${system}".twilight
     signal-desktop
+    webcord
 
     # Terminal
     fastfetch
@@ -60,7 +62,7 @@
     prismlauncher
     r2modman
     lumafly
-    #ckan
+    ckan
 
     # Produtividade
     obsidian
@@ -92,7 +94,7 @@
     python3
     python3Packages.matplotlib
     #android-tools
-    #android-studio
+    android-studio
     #jetbrains.idea-community-bin
     #jetbrains.clion
     #jetbrains.pycharm-community-bin

@@ -57,10 +57,11 @@
         home-config = import ./home/home-config.nix;
 
         # Modules
-        gnome = import ./modules/home/genvs/gnome/gnome.nix;
-        plasma = import ./modules/home/genvs/plasma/plasma.nix;
-        hyprland = import ./modules/home/genvs/hyprland/hyprland.nix;
-        sway = import ./modules/home/genvs/sway/sway.nix;
+        gnome = import ./modules/home/genvs/gnome/default.nix;
+        plasma = import ./modules/home/genvs/plasma/default.nix;
+        hyprland = import ./modules/home/genvs/hyprland/default.nix;
+        i3wm = import ./modules/home/genvs/i3wm/default.nix;
+        swaywm = import ./modules/home/genvs/swaywm/default.nix;
         fonts = import ./modules/fonts.nix;
         programs = import ./modules/programs/programs.nix;
         vscodium = import ./modules/programs/editors/vscodium.nix;
@@ -122,7 +123,8 @@
             home
             sddm
             uwsm
-            sway
+            i3wm
+            swaywm
             bash
             network
             grub
@@ -144,6 +146,7 @@
             fonts
             virtualisation
             tailscale
+            zerotier
             syncthing
             user-jvs
             sops

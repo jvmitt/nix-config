@@ -9,9 +9,8 @@
     kdePackages.qtmultimedia
     kdePackages.qtsvg
     kdePackages.qtvirtualkeyboard
-    libsForQt5.qt5.qtmultimedia
+    qt5.qtmultimedia
     qt6.qtbase
   ];
 
 }
-
