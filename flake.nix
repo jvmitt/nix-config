@@ -68,7 +68,7 @@
         qt = import ./modules/programs/qt.nix;
         firefox = import ./modules/programs/firefox.nix;
         steam = import ./modules/programs/steam.nix;
-        virtualisation = import ./modules/virtualisation.nix;
+        virtualization = import ./modules/virtualization.nix;
 
         # Server Stuff
         adguardhome = import ./modules/server/adguardhome.nix;
@@ -144,7 +144,7 @@
             programs
             firefox
             fonts
-            virtualisation
+            virtualization
             tailscale
             zerotier
             syncthing
