@@ -11,6 +11,7 @@
   nixpkgs.config.packageOverrides = pkgs: {
     unstable = import <nixos-unstable> { config = config.nixpkgs.config; };
   };
+
   environment.systemPackages = with pkgs; [
 
     # Sem Categoria
@@ -55,15 +56,6 @@
     gzip
     gpa
 
-    # Jogos
-    #lutris
-    hydralauncher
-    protonup-ng
-    prismlauncher
-    r2modman
-    lumafly
-    ckan
-
     # Produtividade
     obsidian
     anki-bin
@@ -94,10 +86,7 @@
     python3
     python3Packages.matplotlib
     #android-tools
-    android-studio
-    #jetbrains.idea-community-bin
-    #jetbrains.clion
-    #jetbrains.pycharm-community-bin
+    #android-studio
 
     # 3D & 2D
     freecad-wayland

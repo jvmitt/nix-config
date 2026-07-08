@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 let
-  virtualisation_username = "jvs";
+  virtualisation_username = username;
 in
 {
 
@@ -10,6 +10,11 @@ in
       enable = true;
       setSocketVariable = true;
     };
+    podman = {
+      enable = true;
+      dockerCompat = false;
+      defaultNetwork.settings.dns_enabled = true;
+    };
   };
 
   environment.systemPackages = with pkgs; [
@@ -17,6 +22,10 @@ in
     virt-manager
     freerdp
     winboat
+    dive
+    podman-tui
+    docker-compose
+    podman-compose
   ];
 
   users = {

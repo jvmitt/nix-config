@@ -9,18 +9,20 @@
 
   networking.hostName = "nixos";
 
-  # Required for orca-slicer
-  nixpkgs.config.permittedInsecurePackages = [
-    "libsoup-2.74.3"
-  ];
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
+
   imports = [
     ./hardware-configuration.nix
   ];
+
+  # Host specific tweaks
+  hardware.nvidia.prime = {
+    intelBusId = "PCI:0:2:0";
+    nvidiaBusId = "PCI:1:0:0";
+  };
 
   system = {
     copySystemConfiguration = false;
@@ -28,4 +30,3 @@
   };
 
 }
-

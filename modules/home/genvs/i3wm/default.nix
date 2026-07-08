@@ -9,6 +9,9 @@
   services.xserver = {
     enable = true;
     windowManager.i3.enable = true;
+    desktopManager = {
+      xterm.enable = false;
+    };
   };
   programs.dconf.enable = true;
   security.pam.services = {
