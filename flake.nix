@@ -101,7 +101,6 @@
         pipewire = import ./modules/system/pipewire.nix;
         power = import ./modules/system/power.nix;
         network = import ./modules/system/network/network.nix;
-        battery = import ./modules/system/battery.nix;
         localhost = import ./modules/system/network/localhost.nix;
         security = import ./modules/system/security.nix;
         timezone = import ./modules/system/timezone.nix;
@@ -142,7 +141,6 @@
             optimization
             pipewire
             power
-            battery
             programs
             firefox
             fonts
