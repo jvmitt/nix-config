@@ -3,11 +3,10 @@
 
   boot = {
     extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
-    initrd.kernelModules = [ "nvidia" ];
+    initrd.kernelModules = [ ];
   };
   services.xserver.videoDrivers = [
     "modesetting"
-    "nvidia"
   ];
 
   hardware = {
@@ -19,7 +18,7 @@
       ];
     };
     nvidia = {
-      modesetting.enable = true;
+      modesetting.enable = false;
       powerManagement.enable = true;
       powerManagement.finegrained = true;
       open = false;

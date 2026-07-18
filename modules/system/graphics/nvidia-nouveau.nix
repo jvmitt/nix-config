@@ -19,7 +19,7 @@
       ];
     };
     nvidia = {
-      modesetting.enable = true;
+      modesetting.enable = false;
       powerManagement.enable = true;
       powerManagement.finegrained = true;
       open = true;

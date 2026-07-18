@@ -21,7 +21,7 @@ in
     qemu
     virt-manager
     freerdp
-    winboat
+    #winboat
     dive
     podman-tui
     docker-compose

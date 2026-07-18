@@ -15,9 +15,9 @@
   };
   programs.dconf.enable = true;
   security.pam.services = {
-    i3lock.enable = true;
-    i3lock-color.enable = true;
-    xlock.enable = true;
-    xscreensaver.enable = true;
+    i3lock.enable = false;
+    i3lock-color.enable = false;
+    xlock.enable = false;
+    xscreensaver.enable = false;
   };
 }

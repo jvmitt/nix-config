@@ -26,7 +26,7 @@
 
     inputs.zen-browser.packages."${system}".twilight
     signal-desktop
-    webcord
+    discord
 
     # Terminal
     fastfetch
@@ -89,7 +89,7 @@
     #android-studio
 
     # 3D & 2D
-    freecad-wayland
+    #freecad-wayland
     #librecad
     #cura-appimage
     orca-slicer

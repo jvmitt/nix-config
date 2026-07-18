@@ -146,7 +146,7 @@
             fonts
             virtualization
             tailscale
-            zerotier
+            #zerotier
             syncthing
             user-jvs
             sops
